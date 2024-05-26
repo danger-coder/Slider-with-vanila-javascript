@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.left-arrow ,.right-arrow{
+    height: 150px;
+    cursor: pointer;
+}
+.left-arrow{
+    transform: rotate(180deg);
+}
+.frame{
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: covers;
+}
+.button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.bottom{
+    display: flex;
+    gap: 30px;
+}
+.slider{
+    display: flex;
+    transition: all 1s ease;
+}
